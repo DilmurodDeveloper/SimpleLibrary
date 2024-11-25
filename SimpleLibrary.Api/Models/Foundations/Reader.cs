@@ -10,6 +10,6 @@ namespace SimpleLibrary.Api.Models.Foundations
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public int Age { get; set; }
-        public List<string> Books { get; set; }
+        public List<Book> Books { get; set; }
     }
 }
