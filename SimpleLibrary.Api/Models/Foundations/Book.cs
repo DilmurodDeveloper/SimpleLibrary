@@ -11,5 +11,6 @@ namespace SimpleLibrary.Api.Models.Foundations
         public string Author { get; set; }
         public string Genre { get; set; }
         public Guid ReaderId { get; set; }
+        public Reader Reader { get; set; }
     }
 }
