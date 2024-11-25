@@ -23,6 +23,9 @@
 
   <ItemGroup>
     <Folder Include="Controllers\" />
+    <Folder Include="Models\Foundations\Book\Exceptions\Book\" />
+    <Folder Include="Models\Foundations\Book\Exceptions\ReaderBook\" />
+    <Folder Include="Models\Foundations\Book\Exceptions\Reader\" />
   </ItemGroup>
 
 </Project>
