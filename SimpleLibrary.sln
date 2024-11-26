@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleLibrary.Api", "Simple
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleLibrary.Api.Tests.Unit", "SimpleLibrary.Api.Tests.Unit\SimpleLibrary.Api.Tests.Unit.csproj", "{B8E072C5-8A82-4345-8E03-5613E7ABCF92}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleLibrary.Api.Infrastracture.Build", "SimpleLibrary.Api.Infrastracture.Build\SimpleLibrary.Api.Infrastracture.Build.csproj", "{9E284F36-E0E4-45D6-B9A2-3623112DB066}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B8E072C5-8A82-4345-8E03-5613E7ABCF92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8E072C5-8A82-4345-8E03-5613E7ABCF92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8E072C5-8A82-4345-8E03-5613E7ABCF92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E284F36-E0E4-45D6-B9A2-3623112DB066}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E284F36-E0E4-45D6-B9A2-3623112DB066}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E284F36-E0E4-45D6-B9A2-3623112DB066}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E284F36-E0E4-45D6-B9A2-3623112DB066}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
