@@ -9,10 +9,10 @@ namespace SimpleLibrary.Api.Brokers.Storages
 {
     public partial interface IStorageBroker
     {
-        Task<Reader> InsertReaderAsync(Reader reader);
-        Task<Reader> SelectReaderByIdAsync(Guid readerId);
+        ValueTask<Reader> InsertReaderAsync(Reader reader);
+        ValueTask<Reader> SelectReaderByIdAsync(Guid readerId);
         IQueryable<Reader> SelectAllReaders();
-        Task<Reader> UpdateReaderAsync(Reader reader);
-        Task<Reader> DeleteReaderAsync(Reader reader);
+        ValueTask<Reader> UpdateReaderAsync(Reader reader);
+        ValueTask<Reader> DeleteReaderAsync(Reader reader);
     }
 }

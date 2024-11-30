@@ -9,6 +9,6 @@ namespace SimpleLibrary.Api.Brokers.Storages
 {
     public partial interface IStorageBroker
     {
-        Task<ReaderBook> SelectReaderWithBooksAsync(Guid readerId);
+        ValueTask<ReaderBook> SelectReaderWithBooksAsync(Guid readerId);
     }
 }

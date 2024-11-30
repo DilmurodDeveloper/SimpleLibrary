@@ -13,7 +13,7 @@ namespace SimpleLibrary.Api.Brokers.Storages
     {
         public DbSet<Reader> Readers { get; set; }
 
-        public async Task<Reader> InsertReaderAsync(Reader reader)
+        public async ValueTask<Reader> InsertReaderAsync(Reader reader)
         {
             using var broker = new StorageBroker(this.configuration);
 
@@ -28,13 +28,13 @@ namespace SimpleLibrary.Api.Brokers.Storages
         public IQueryable<Reader> SelectAllReaders() =>
             SelectAll<Reader>();
 
-        public async Task<Reader> SelectReaderByIdAsync(Guid readerId) =>
+        public async ValueTask<Reader> SelectReaderByIdAsync(Guid readerId) =>
             await SelectAsync<Reader>(readerId);
 
-        public async Task<Reader> UpdateReaderAsync(Reader reader) =>
+        public async ValueTask<Reader> UpdateReaderAsync(Reader reader) =>
             await UpdateAsync(reader);
 
-        public async Task<Reader> DeleteReaderAsync(Reader reader) =>
+        public async ValueTask<Reader> DeleteReaderAsync(Reader reader) =>
             await DeleteAsync<Reader>(reader);
     }
 }

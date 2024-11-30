@@ -12,7 +12,7 @@ namespace SimpleLibrary.Api.Brokers.Storages
 {
     public partial class StorageBroker
     {
-        public async Task<ReaderBook> SelectReaderWithBooksAsync(Guid readerId)
+        public async ValueTask<ReaderBook> SelectReaderWithBooksAsync(Guid readerId)
         {
             Reader reader = await this.Set<Reader>().FirstOrDefaultAsync(r => r.Id == readerId);
 
