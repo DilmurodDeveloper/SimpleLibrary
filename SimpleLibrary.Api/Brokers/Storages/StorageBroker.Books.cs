@@ -13,7 +13,7 @@ namespace SimpleLibrary.Api.Brokers.Storages
     {
         public DbSet<Book> Books { get; set; }
 
-        public async Task<Book> InsertBookAsync(Book book)
+        public async ValueTask<Book> InsertBookAsync(Book book)
         {
             using var broker = new StorageBroker(this.configuration);
 
@@ -28,13 +28,13 @@ namespace SimpleLibrary.Api.Brokers.Storages
         public IQueryable<Book> SelectAllBooks() =>
             SelectAll<Book>();
 
-        public async Task<Book> SelectBookByIdAsync(Guid bookId) =>
+        public async ValueTask<Book> SelectBookByIdAsync(Guid bookId) =>
             await SelectAsync<Book>(bookId);
 
-        public async Task<Book> UpdateBookAsync(Book book) =>
+        public async ValueTask<Book> UpdateBookAsync(Book book) =>
             await UpdateAsync(book);
 
-        public async Task<Book> DeleteBookAsync(Book book) =>
+        public async ValueTask<Book> DeleteBookAsync(Book book) =>
             await DeleteAsync<Book>(book);
     }
 }
